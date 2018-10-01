@@ -89,7 +89,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Note: "enhanced" is necessary for boxed titles           -->
 <xsl:template match="&DEFINITION-LIKE;" mode="tcb-style">
     <xsl:text>enhanced, arc=4mm,outer arc=1mm,colback=pink,&#xa;</xsl:text>
-    <xsl:text>attach boxed title to top center={yshift=-\tcboxedtitleheight/2},&#xa;</xsl:text>
+    <!-- <xsl:text>attach boxed title to top center={yshift=-\tcboxedtitleheight/2},&#xa;</xsl:text> -->
     <xsl:text>boxed title style={size=small,colback=blue},&#xa;</xsl:text>
 </xsl:template>
 

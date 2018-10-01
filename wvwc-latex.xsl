@@ -90,7 +90,11 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <xsl:template match="&DEFINITION-LIKE;" mode="tcb-style">
     <xsl:text>enhanced, arc=4mm,outer arc=1mm,colback=pink,&#xa;</xsl:text>
     <!-- <xsl:text>attach boxed title to top center={yshift=-\tcboxedtitleheight/2},&#xa;</xsl:text> -->
+<<<<<<< HEAD:wvwc-calc-latex.xsl
     <!-- <xsl:text>boxed title style={size=small,colback=blue},&#xa;</xsl:text> -->
+=======
+    <xsl:text>boxed title style={size=small,colback=blue},&#xa;</xsl:text>
+>>>>>>> refs/remotes/origin/master:wvwc-latex.xsl
 </xsl:template>
 
 <!-- REMARK-LIKE: "remark", "convention", "note",   -->

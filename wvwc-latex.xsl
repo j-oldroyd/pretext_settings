@@ -109,7 +109,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Default tcolorbox, but with tricolor titles    -->
 <!-- Each just slightly different                   -->
 <xsl:template match="example" mode="tcb-style">
-    <xsl:text>colback=blue!3</xsl:text>
+    <xsl:text>colback=blue!5</xsl:text>
 </xsl:template>
 <xsl:template match="question" mode="tcb-style">
     <xsl:text>coltitle=blue</xsl:text>
@@ -169,15 +169,15 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- See titleps.pdf in the "titlesec" package for more             -->
 <xsl:template match="book|article|letter|memo" mode="titleps-empty">
     <xsl:text>{
-    \setfoot[foot/odd/empty][][]
-    {foot/even or one-sided/empty}{}{}
+    \setfoot[][][]
+    {}{}{}
     }</xsl:text>
 </xsl:template>
 
 <xsl:template match="book|article|letter|memo" mode="titleps-plain">
     <xsl:text>{
-    \setfoot[foot/odd/plain][\thepage][]
-    {foot/even or one-sided/plain}{\thepage}{}
+    \setfoot[][\thepage][]
+    {}{\thepage}{}
     }</xsl:text>
 </xsl:template>
 

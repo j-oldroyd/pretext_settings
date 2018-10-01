@@ -182,16 +182,18 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 </xsl:template>
 
 <!-- This is cribbed from Section 8 of "titleps.pdf" (2016-03-15) -->
+<!-- Adjusted Section/Chapter displays. -->
 <xsl:template match="book" mode="titleps-headings">
     <xsl:text>[\small\sffamily]{
     \sethead[\textbf{\thepage}]
     [\textsl{\chaptertitle}]
-    [\toptitlemarks\thesection--\bottitlemarks\thesection]
-    {\toptitlemarks\thesection--\bottitlemarks\thesection]}
+    [Chapter~\thechapter]
+    {Section~\thesection}
     {\textsl{\sectiontitle}}
-    {\textbf{\thepage}}}
-    \setfoot[foot/odd/headings/book][][]
-    {foot/even or one-sided/headings/book}{}{}</xsl:text>
+    {\textbf{\thepage}}
+    \setfoot[][\thepage][Section~\thesection]
+    {Chapter~\thechapter}{\thepage}{}
+    }</xsl:text>
 </xsl:template>
 
 <xsl:template match="article|letter|memo" mode="titleps-headings">

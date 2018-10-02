@@ -76,9 +76,10 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Documentation suggests "title engine=path"        -->
 <!-- is necessary, but it seems to not be              -->
 <xsl:template match="&THEOREM-LIKE;|&AXIOM-LIKE;" mode="tcb-style">
-    <xsl:text>enhanced, title engine=path, colback=red!5!white,&#xa;</xsl:text>
-    <xsl:text>colframe=red!75!black, coltitle=blue!50!black,fonttitle=\bfseries,&#xa;</xsl:text>
-    <xsl:text>title style={left color=blue!15!yellow, right color=red!85!black}, </xsl:text>
+    <xsl:text>enhanced, title engine=path, colback=red!8!white, &#xa;</xsl:text>
+    <xsl:text>colframe=blue!75!black,coltitle=blue!10!white,fonttitle=\bfseries\sffamily,&#xa;</xsl:text>
+    <!-- <xsl:text>colframe=red!75!black, coltitle=blue!50!black,fonttitle=\bfseries,&#xa;</xsl:text> -->
+    <xsl:text>title style={left color=blue!15!black, right color=blue!45!black}, </xsl:text>
 </xsl:template>
 
 <!-- DEFINITION-LIKE: "definition"   -->
@@ -88,7 +89,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- of the LaTeX source using the hex A (dec 10) character   -->
 <!-- Note: "enhanced" is necessary for boxed titles           -->
 <xsl:template match="&DEFINITION-LIKE;" mode="tcb-style">
-    <xsl:text>enhanced, arc=4mm,outer arc=1mm,colback=pink,&#xa;</xsl:text>
+    <xsl:text>enhanced, arc=4mm,outer arc=1mm,colback=red!8,fonttitle=\sffamily,&#xa;</xsl:text>
     <!-- <xsl:text>attach boxed title to top center={yshift=-\tcboxedtitleheight/2},&#xa;</xsl:text> -->
     <xsl:text>boxed title style={size=small,colback=blue},&#xa;</xsl:text>
 </xsl:template>
@@ -109,7 +110,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Default tcolorbox, but with tricolor titles    -->
 <!-- Each just slightly different                   -->
 <xsl:template match="example" mode="tcb-style">
-    <xsl:text>colback=blue!5</xsl:text>
+    <xsl:text>colback=blue!8, fonttitle=\sffamily</xsl:text>
 </xsl:template>
 <xsl:template match="question" mode="tcb-style">
     <xsl:text>coltitle=blue</xsl:text>

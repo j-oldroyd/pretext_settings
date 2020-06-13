@@ -34,7 +34,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
 <!-- Override specific tenplates of the standard conversion -->
 <!-- Assumes current file is in mathbook/user, so it must be copied there -->
-<xsl:import href="../xsl/mathbook-latex.xsl" />
+<xsl:import href="../xsl/pretext-latex.xsl" />
 
 <!-- Intend output for rendering by pdflatex -->
 <xsl:output method="text" />

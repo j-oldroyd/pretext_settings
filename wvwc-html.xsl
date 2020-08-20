@@ -15,16 +15,6 @@
 <!-- With no titles, we turn this off  -->
 <xsl:param name="html.knowl.example" select="'no'" />
 
-<!-- Exercises have "hint" and "solution"s -->
-<!--   Hints: for a backmatter section     -->
-<!--   Solutions: should not see them in   -->
-<!--              any public print version -->
-<!-- HTML: knowlize as available/appropriate -->
-<xsl:param name="exercise.text.statement" select="'yes'" />
-<xsl:param name="exercise.text.hint" select="'no'" />
-<xsl:param name="exercise.backmatter.statement" select="'no'" />
-<xsl:param name="exercise.backmatter.hint" select="'yes'" />
-
 <!-- Changes to mimic in HTML via CSS/other changes? -->
 <!-- LaTeX: Bold and italic for terminology macro -->
 <!-- LaTeX: Proof to small caps -->
